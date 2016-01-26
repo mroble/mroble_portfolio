@@ -27,6 +27,13 @@ body {
 	margin-left: 0px;
 }
 
+.header-main p {
+	text-align: center;
+	height: 150px;
+	background-color: #FFB8D6;
+	padding-bottom: 30px;
+
+}
 
 ul {
 
