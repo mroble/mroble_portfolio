@@ -16,7 +16,7 @@ html {
 
 body {
     background-image: url("images/girly-stars-pink-header.jpg");
-    margin: 0 0 100px; /* bottom = footer height */
+    
 }
 
 
@@ -31,15 +31,12 @@ li {
 }
 
 
-div footer {
-    position: absolute;
-    background-color: #FFB8D6;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-}
+.footer-navigation {
+	text-align: center;
+	height: 150px;
+	background-color: #FFB8D6
 
+}
 
 .navigation-github img {
 	height: 50px;
