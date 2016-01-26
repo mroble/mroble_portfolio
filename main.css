@@ -41,24 +41,24 @@ li {
 .navigation-github img {
 	height: 50px;
 	width: 50px;
-	padding: 0 20px 0 20px;
+	padding: 35px 20px 0 20px;
 
 }
 
 .navigation-linkedin img {
-	padding: 0 20px 0 20px;
+	padding: 35px 20px 0 20px;
 }
 
 .navigation-resume img {
 	height: 50px;
 	width: auto;
-	padding: 0 20px 0 20px;
+	padding: 35px 20px 0 20px;
 }
 
 .navigation-contact img {
 	height: 50px;
 	width: auto;
-	padding: 0 20px 0 20px;
+	padding: 35px 20px 0 20px;
 }
 
 
