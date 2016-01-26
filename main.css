@@ -19,6 +19,14 @@ body {
     
 }
 
+.drop-down-menu img {
+	height: 90px;
+	width: auto;
+	float:right; 
+	padding-right: 15px;
+	margin-left: 0px;
+}
+
 
 ul {
 
@@ -61,24 +69,41 @@ li {
 	padding: 35px 20px 0 20px;
 }
 
+.header-contact p {
+	text-align: center;
+	height: 150px;
+	background-color: #FFB8D6;
+	padding-bottom: 30px;
+
+}
+
+.header-contact img {
+	
+	height: 175px;
+	width: auto;
+	padding-top: 15px;
+	padding-bottom: 45px;
+
+	
+}
 
 /*Code below is from codepen...will change later! http://codepen.io/rexkirby/pen/Fdnlz */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/*
 
-#feedback-page{
+
+feedback-page {
 	text-align:center;
 }
 
-#form-main{
-	width:100%;
+form-main {
+	width: 80%;
 	float:left;
-	padding-top:0px;
+	padding-top:10px;
 }
 
-#form-div {
+ form-div {
 	background-color:rgba(72,72,72,0.4);
 	padding-left:35px;
 	padding-right:35px;
@@ -128,14 +153,14 @@ li {
 
 
 
-#name{
+name{
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#name:focus{
+name:focus{
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
 	background-position: 8px 5px;
@@ -143,21 +168,21 @@ li {
 	background-repeat: no-repeat;
 }
 
-#email{
+email{
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#email:focus{
+email:focus{
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#comment{
+comment{
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
@@ -165,7 +190,7 @@ li {
 }
 
 textarea {
-    width: 100%;
+    width: 80%;
     height: 150px;
     line-height: 150%;
     resize:vertical;
@@ -176,7 +201,7 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-#button-blue{
+button-blue{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
@@ -194,7 +219,7 @@ input:focus, textarea:focus {
   font-weight:700;
 }
 
-#button-blue:hover{
+button-blue:hover{
 	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }
@@ -230,4 +255,4 @@ input:focus, textarea:focus {
 	}
 }
 
-*/
+
