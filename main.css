@@ -8,15 +8,62 @@ html, body, h1, h2, h3, h4, p, div {
 	font-size: 100%;
 }
 
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url("images/girly-stars-pink-header.jpg");
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+
 ul {
 
-list-style-type: none;
+	list-style-type: none;
 
 }
 
 li {
 	display: inline;
 }
+
+
+div footer {
+    position: absolute;
+    background-color: #FFB8D6;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+
+.navigation-github img {
+	height: 50px;
+	width: 50px;
+	padding: 0 20px 0 20px;
+
+}
+
+.navigation-linkedin img {
+	padding: 0 20px 0 20px;
+}
+
+.navigation-resume img {
+	height: 50px;
+	width: auto;
+	padding: 0 20px 0 20px;
+}
+
+.navigation-contact img {
+	height: 50px;
+	width: auto;
+	padding: 0 20px 0 20px;
+}
+
 
 /*Code below is from codepen...will change later! http://codepen.io/rexkirby/pen/Fdnlz */
 
