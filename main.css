@@ -8,12 +8,23 @@ html, body, h1, h2, h3, h4, p, div {
 	font-size: 100%;
 }
 
+ul {
+
+list-style-type: none;
+
+}
+
+li {
+	display: inline;
+}
 
 /*Code below is from codepen...will change later! http://codepen.io/rexkirby/pen/Fdnlz */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+/*html{    
+
+	background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
   background-size: cover;
   height:100%;
 }
@@ -180,4 +191,4 @@ input:focus, textarea:focus {
 	}
 }
 
-
+*/
