@@ -23,9 +23,20 @@ body {
 	height: 90px;
 	width: auto;
 	float:right; 
+	margin-right: 20px;
+	padding-top: 10px;
 	padding-right: 15px;
 	margin-left: 0px;
 }
+
+
+.center-navigation img {
+	height: 250px;
+	width: auto;
+	text-align: center;
+}
+
+
 
 .header-main p {
 	text-align: center;
@@ -35,15 +46,25 @@ body {
 
 }
 
+.header-main img {
+	height: 210px;
+	width: auto;
+	padding-left: 20px;
+
+}
+
 ul {
 
 	list-style-type: none;
-
+	text-align: center;
 }
+
+
 
 li {
 	display: inline;
 }
+
 
 
 .footer-navigation {
@@ -96,7 +117,7 @@ li {
 
 .header-coming-soon p {
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	background-color: #FFB8D6;
