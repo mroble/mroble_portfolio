@@ -94,6 +94,31 @@ li {
 	
 }
 
+.header-coming-soon p {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background-color: #FFB8D6;
+
+}
+
+.header-coming-soon img {
+
+	height: 400px;
+	width: auto;
+	padding: 0;
+
+}
+
+.home-castle-button p {
+	margin-top: 0px;
+	text-align: center;
+	padding-top: 0px;
+}
+
+
+
 /*Code below is from codepen...will change later! http://codepen.io/rexkirby/pen/Fdnlz */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
