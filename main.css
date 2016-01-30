@@ -125,6 +125,22 @@ li {
 
 
 
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+
 /*Code below is from codepen...will change later! http://codepen.io/rexkirby/pen/Fdnlz */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
