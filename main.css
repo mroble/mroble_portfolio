@@ -19,7 +19,7 @@ body {
     
     /*Margin bottom by footer height */
 
-    margin-bottom: 450px;
+    margin-bottom: 280px;
     
 }
 
@@ -73,12 +73,18 @@ li {
 	bottom: 0;
 	width: 100%;
 	/* set the fixed height of the footer here */
-	padding: 30 0;
-	height: 300px;
+	padding: 0;
+	height: 250px;
 
 	background-color: #FFB8D6;
 
+}
 
+.footer img {
+	height: 150px;
+	width: auto;
+	padding: 30px 10px 10px 10px;
+}
 
 @media only screen and (max-width: 768px) {
   body {margin-bottom: 400px; } 
@@ -87,7 +93,7 @@ li {
 
 
 
-.navigation-github img {
+/*.navigation-github img {
 	height: 50px;
 	width: auto;
 	padding: 35px 20px 0 20px;
@@ -136,7 +142,7 @@ li {
 	padding-top: 0px;
 }
 
-
+*/
 
 
 
