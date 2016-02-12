@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="main.css">
+		
+  		<style>
+  		.carousel-inner > .item > img,
+  		.carousel-inner > .item > a > img {
+     	 width: 70%;
+      	margin: auto;
+ 		 }
+  		</style>
+
 
 	</head>
 	
@@ -17,23 +27,67 @@
 			</div>
 
 
-			<div id="center-navigation">
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-			<ul>
-			<li><a href="https://www.youtube.com/watch?v=HlOCo1Fw4r8"><img src="images/megan-skirt-button.png" alt="color block skirt button"></a></li>
-		
-			
-			<li><a href="https://www.youtube.com/watch?v=gox4la0vzlc"><img src="images/supply-bag-button.png" alt="supply bag button"></a></li>
-			
-			<li><a href="https://vimeo.com/8403581"><img src="images/handmaids-button.png" alt="handmaids video button"></a></li>
-		
-			<li><a href="https://www.youtube.com/watch?v=ZELHokfzBdQ"><img src="images/tamir-button.png"alt="tamir video button"></a></li>
-		
 
-			</ul>
-			</div>
-			
-			
+<!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <a href="https://www.youtube.com/watch?v=HlOCo1Fw4r8"><img src="images/megan-skirt-button.png" alt="color block skirt button"></a>
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.youtube.com/watch?v=gox4la0vzlc"><img src="images/supply-bag-button.png" alt="supply bag button"></a>
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <a href="https://vimeo.com/8403581"><img src="images/handmaids-button.png" alt="handmaids video button"></a>
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.youtube.com/watch?v=ZELHokfzBdQ"><img src="images/tamir-button.png"alt="tamir video button"></a>
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
 
 
 			<div class="footer">
@@ -56,6 +110,11 @@
 				</li>
 			</ul>
 			</div>
+
+
+			<script src="js/jquery.min.js"></script>
+  			<script src="js/bootstrap.min.js"></script>
+  		
 	
 		</body>
 
