@@ -4,7 +4,7 @@ html, body, h1, h2, h3, h4, p, div {
 	padding: 0;
 	border: 0;
 	margin: 0;
-	font: inherit;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
 
@@ -53,6 +53,7 @@ ul {
 
 	list-style-type: none;
 	text-align: center;
+	background-color: #FFB8D6;
 }
 
 
@@ -66,14 +67,10 @@ li {
 	bottom: 0;
 	width: 100%;
 	/* set the fixed height of the footer here */
-	height: 220px;
+	height: 200px;
 	padding: 30px 0;
 
-.footer-navigation {
-	text-align: center;
-	background-color: #FFB8D6
 
-}
 
 @media only screen and (max-width: 768px) {
   body {margin-bottom: 400px; } 
