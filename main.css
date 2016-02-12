@@ -67,7 +67,7 @@ li {
 	width: 100%;
 	/* set the fixed height of the footer here */
 	height: 220px;
-	
+	padding: 30px 0;
 
 .footer-navigation {
 	text-align: center;
@@ -75,7 +75,10 @@ li {
 
 }
 
-
+@media only screen and (max-width: 768px) {
+  body {margin-bottom: 400px; } 
+  .footer { height:400px;}
+} 
 
 
 
