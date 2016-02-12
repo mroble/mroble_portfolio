@@ -18,8 +18,13 @@ body {
     background-image: url("images/girly-stars-pink-header.jpg");
     
     /*Margin bottom by footer height */
-    margin-bottom: 220px;
+
+    margin-bottom: 450px;
     
+}
+
+.home-links {
+	padding-top: 50px;
 }
 
 .drop-down-menu img {
@@ -54,13 +59,13 @@ ul {
 
 	list-style-type: none;
 	text-align: center;
-	background-color: #FFB8D6;
+	
 }
-
 
 
 li {
 	display: inline;
+
 }
 
 .footer {
@@ -68,8 +73,10 @@ li {
 	bottom: 0;
 	width: 100%;
 	/* set the fixed height of the footer here */
-	height: 200px;
-	padding: 30px 0;
+	padding: 30 0;
+	height: 300px;
+
+	background-color: #FFB8D6;
 
 
 
