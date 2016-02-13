@@ -1,103 +1,71 @@
-<?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$human = intval($_POST['human']);
-		$from = 'Demo Contact Form'; 
-		$to = 'example@domain.com'; 
-		$subject = 'Message from Contact Demo ';
-		
-		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-		
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-		
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
-		}
-		//Check if simple anti-bot test is correct
-		if ($human !== 5) {
-			$errHuman = 'Your anti-spam is incorrect';
-		}
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
-	}
+<?php 
+if (isset($_REQUEST['submitted'])) {
+// Initialize error array.
+  $errors = array();
+  // Check for a proper First name
+  if (!empty($_REQUEST['firstname'])) {
+  $firstname = $_REQUEST['firstname'];
+  $pattern = "/^[a-zA-Z0-9\_]{2,20}/";// This is a regular expression that checks if the name is valid characters
+  if (preg_match($pattern,$firstname)){ $firstname = $_REQUEST['firstname'];}
+  else{ $errors[] = 'Your Name can only contain _, 1-9, A-Z or a-z 2-20 long.';}
+  } else {$errors[] = 'You forgot to enter your First Name.';}
+  
+  // Check for a proper Last name
+  if (!empty($_REQUEST['lastname'])) {
+  $lastname = $_REQUEST['lastname'];
+  $pattern = "/^[a-zA-Z0-9\_]{2,20}/";// This is a regular expression that checks if the name is valid characters
+  if (preg_match($pattern,$lastname)){ $lastname = $_REQUEST['lastname'];}
+  else{ $errors[] = 'Your Name can only contain _, 1-9, A-Z or a-z 2-20 long.';}
+  } else {$errors[] = 'You forgot to enter your Last Name.';}
+  
+  //Check for a valid phone number
+  if (!empty($_REQUEST['phone'])) {
+  $phone = $_REQUEST['phone'];
+  $pattern = "/^[0-9\_]{7,20}/";
+  if (preg_match($pattern,$phone)){ $phone = $_REQUEST['phone'];}
+  else{ $errors[] = 'Your Phone number can only be numbers.';}
+  } else {$errors[] = 'You forgot to enter your Phone number.';}
+  
+  if (!empty($_REQUEST['redmapleacer']) || !empty($_REQUEST['chinesepistache']) || !empty($_REQUEST['raywoodash'])) {
+  $check1 = $_REQUEST['redmapleacer'];
+  if (empty($check1)){$check1 = 'Unchecked';}else{$check1 = 'Checked';}
+  $check2 = $_REQUEST['chinesepistache'];
+  if (empty($check2)){$check2 = 'Unchecked';}else{$check2 = 'Checked';}
+  $check3 = $_REQUEST['raywoodash'];
+  if (empty($check3)){$check3 = 'Unchecked';}else{$check3 = 'Checked';}
+  } else {$errors[] = 'You forgot to enter your Phone number.';}
+  }
+  //End of validation 
+
+  if (isset($_REQUEST['submitted'])) {
+  if (empty($errors)) { 
+  $from = "From: Our Site!"; //Site name
+  // Change this to your email address you want to form sent to
+  $to = "moroble@gmail.com"; 
+  $subject = "Admin - Our Site! Comment from " . $name . "";
+  
+  $message = "Message from " . $firstname . " " . $lastname . " 
+  
+  mail($to,$subject,$message,$from);
+  }
 }
-	}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bootstrap contact form with PHP example by BootstrapBay.com.">
-    <meta name="author" content="BootstrapBay.com">
-    <title>Contact Me!</title>
-    <link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
-  </head>
-  <body>
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-md-6 col-md-offset-3">
-  				<h1 class="page-header text-center">Contact Form Example</h1>
-				<form class="form-horizontal" role="form" method="post" action="index.php">
-					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Name</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-							<?php echo "<p class='text-danger'>$errName</p>";?>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="email" class="col-sm-2 control-label">Email</label>
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-							<?php echo "<p class='text-danger'>$errEmail</p>";?>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="message" class="col-sm-2 control-label">Message</label>
-						<div class="col-sm-10">
-							<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-							<?php echo "<p class='text-danger'>$errMessage</p>";?>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-							<?php echo "<p class='text-danger'>$errHuman</p>";?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10 col-sm-offset-2">
-							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10 col-sm-offset-2">
-							<?php echo $result; ?>	
-						</div>
-					</div>
-				</form> 
-			</div>
-		</div>
-	</div>   
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+<?php 
+  //Print Errors
+  if (isset($_REQUEST['submitted'])) {
+  // Print any error messages. 
+  if (!empty($errors)) { 
+  echo '<hr /><h3>The following occurred:</h3><ul>'; 
+  // Print each error. 
+  foreach ($errors as $msg) { echo '<li>'. $msg . '</li>';}
+  echo '</ul><h3>Your mail could not be sent due to input errors.</h3><hr />';}
+   else{echo '<hr /><h3 align="center">Your mail was sent. Thank you!</h3><hr /><p>Below is the message that you sent.</p>'; 
+  echo "Message from " . $firstname . " " . $lastname . " <br />Phone: ".$phone." <br />";
+  echo "<br />Red Maple Acer: " . $check3 . "";
+  echo "<br />Chinese Pistache: " . $check2 . "";
+  echo "<br />Raywood Ash: " . $check3 . "";
+  }
+  }
+//End of errors array
+  ?>
