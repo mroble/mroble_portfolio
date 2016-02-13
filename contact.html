@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <!--<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="main.css">
+
     </head>
       
       <body>
@@ -19,11 +20,13 @@
   <h1>Send me a message!</h1>
   <form action="contact.php" method="post">
   <label>First Name: <br />
-  <input name="firstname" type="text" value="- Enter First Name -" /><br /></label>
+  <input name="firstname" type="text" value="- Enter First Name -" /><br/></label>
   <label>Last Name: <br />
-  <input name="lastname" type="text" value="- Enter Last Name -" /><br /></label>
-  <label>Message: <br />
-  <input name="message" type="text" value="- Send me a short message! -" /><br /></label>
+  <input name="lastname" type="text" value="- Enter Last Name -" /><br/></label>
+  <textarea rows="5" cols="80" id="message">
+  Send me a message!
+  </textarea> <br/>
+
   
   <input name="" type="reset" value="Reset Form" /><input name="submitted" type="submit" value="Submit" />
   </form>
