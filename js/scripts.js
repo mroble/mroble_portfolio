@@ -1,7 +1,7 @@
 $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
     	formError();
-   	submitMSG(false, "Did you fill in the form properly?");
+   		submitMSG(false, "Did you fill in the form properly?");
    }else { 
 
 	event.preventDefault();
@@ -18,7 +18,7 @@ function submitForm(){
  
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
+        url: "php/process.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){
@@ -28,7 +28,6 @@ function submitForm(){
     });
 }
 function formSuccess(){
-    $( "#msgSubmit" ).removeClass( "hidden" );
     $("#contactForm")[0].reset();
 	submitMSG(true, "Message Submitted!")
 }
