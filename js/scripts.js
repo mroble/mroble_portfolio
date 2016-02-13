@@ -1,7 +1,9 @@
-$("#contactForm").submit(function(event){
-    // cancels the form submission
-    event.preventDefault();
-    submitForm();
+$("#contactForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+   }else { 
+//everything looks good!
+	event.preventDefault();
+   	submitForm();
 });
 
 function submitForm(){
