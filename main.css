@@ -92,6 +92,10 @@ li {
 } 
 
 
+textarea {
+	margin-top: 20px;
+}
+
 
 /*.navigation-github img {
 	height: 50px;
