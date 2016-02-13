@@ -62,9 +62,7 @@ if (isset($_REQUEST['submitted'])) {
   echo '</ul><h3>Your mail could not be sent due to input errors.</h3><hr />';}
    else{echo '<hr /><h3 align="center">Your mail was sent. Thank you!</h3><hr /><p>Below is the message that you sent.</p>'; 
   echo "Message from " . $firstname . " " . $lastname . " <br />Phone: ".$phone." <br />";
-  echo "<br />Red Maple Acer: " . $check3 . "";
-  echo "<br />Chinese Pistache: " . $check2 . "";
-  echo "<br />Raywood Ash: " . $check3 . "";
+ 
   }
   }
 //End of errors array

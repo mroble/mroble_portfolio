@@ -27,7 +27,7 @@ body {
 	padding-top: 50px;
 }
 
-.drop-down-menu img {
+/*.drop-down-menu img {
 	height: 90px;
 	width: auto;
 	float:right; 
@@ -36,6 +36,7 @@ body {
 	padding-right: 15px;
 	margin-left: 0px;
 }
+*/
 
 
 
@@ -62,6 +63,9 @@ ul {
 	
 }
 
+ul drop-1 {
+	list-style-type: block;
+}
 
 li {
 	display: inline;
