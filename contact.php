@@ -48,17 +48,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta name="author" content="BootstrapBay.com">
     <title>Contact Me!</title>
     <link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-  	
-  	<div class="drop-down-menu">
-      <p><img src="images/castle.png"></p>
-      </div>
-
-	<div class="header-main">
-      <p><img src="images/stalk-me-banner.png" alt="contact page banner"></p>
-      </div>
   	<div class="container">
   		<div class="row">
   			<div class="col-md-6 col-md-offset-3">
@@ -109,7 +100,4 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
-
-
-
-  </html>
+</html>
