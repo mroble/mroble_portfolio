@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-
-    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="main.css">
-
-    </head>
-      
-      <body>
-
-      <div class="header-main">
-      <p><img src="images/new-name-banner.png" alt="page banner"></p>
-      </div>
-
-
-
-  <h1>Drop me a line!</h1>
-  <form action="contact.php" method="post">
-  <label>First Name: <br />
-  <input name="firstname" type="text" value="- Enter First Name -" /><br/></label>
-  <br/>
-  <label>Last Name: <br />
-  <input name="lastname" type="text" value="- Enter Last Name -" /><br/></label>
-  <br/>
-
-  <textarea rows="5" cols="80" id="message">
-  Send me a message!
-  </textarea> <br/>
-
-  <br/>
-  <input name="reset" type="reset" value="Reset Form" /><input name="submitted" type="submit" value="Submit" />
-  </form>
-
-
-
-  <div class="footer">
-      <ul class="footer-navigation">
-
-        <li class="navigation-github">
-        <a href="https://github.com/mroble?tab=repositories"><img src="images/imgres.png" alt="Link to my GitHub profile"></a>
-        </li>
-
-        <li class="navigation-linkedin">
-        <a href="https://www.linkedin.com/in/maureen-roble-59bb4a14?trk=hp-identity-name"><img src="images/In-Black-54px-R.png"></a>
-        </li>
-
-        <li class="navigation-resume">
-        <a href="resume.html"><img src="images/page-2400px.png" alt="Link to my resume"></a>
-        </li>
-
-        <li class="navigation-contact">
-        <a href="contact.html"><img src="images/simplemail-300px.png" alt="Link to contact form"></a>
-        </li>
-      </ul>
-      </div>
+<head>
+    <title>Contact form using Bootstrap 3.3.4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+  s<link rel="stylesheet" href="css/animate.css">
+ 
+</head>
+<body>"
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <h3>Send me a message</h3>
+    <form role="form" id="contactForm">
+    <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+     
+    </form>
+</div>
+</div>
 </body>
+<script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
 </html>
