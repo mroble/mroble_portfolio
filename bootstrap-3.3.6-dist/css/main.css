@@ -1,0 +1,176 @@
+/* main.css */
+
+html, body, h1, h2, h3, h4, p, div {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url("images/girly-stars-pink-header.jpg");
+    
+    /*Margin bottom by footer height */
+
+    margin-bottom: 280px;
+    
+}
+
+.home-links {
+	padding-top: 50px;
+}
+
+/*.drop-down-menu img {
+	height: 90px;
+	width: auto;
+	float:right; 
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-right: 15px;
+	margin-left: 0px;
+}
+*/
+
+
+
+
+.header-main p {
+	text-align: center;
+	height: 150px;
+	background-color: #FFB8D6;
+	padding-bottom: 30px;
+
+}
+
+.header-main img {
+	height: 210px;
+	width: auto;
+	padding-left: 20px;
+
+}
+
+ul {
+
+	list-style-type: none;
+	text-align: center;
+	
+}
+
+ul drop-1 {
+	list-style-type: block;
+}
+
+li {
+	display: inline;
+
+}
+
+
+label {
+	display: block;
+	
+}
+
+textarea {
+	float: left;
+
+}
+
+h1 {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* set the fixed height of the footer here */
+	padding: 0;
+	height: 250px;
+
+	background-color: #FFB8D6;
+
+}
+
+.footer img {
+	height: 150px;
+	width: auto;
+	padding: 30px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {margin-bottom: 400px; } 
+  .footer { height:400px;}
+} 
+
+
+textarea {
+	margin-top: 20px;
+}
+
+
+/*.navigation-github img {
+	height: 50px;
+	width: auto;
+	padding: 35px 20px 0 20px;
+
+}
+
+ .navigation-linkedin img {
+	padding: 35px 20px 0 20px;
+} 
+
+.navigation-resume img {
+	height: 50px;
+	width: auto;
+	padding: 35px 20px 0 20px;
+} 
+
+.navigation-contact img {
+	height: 50px;
+	width: auto;
+	padding: 35px 20px 0 20px;
+}
+
+.header-contact p {
+	text-align: center;
+	height: 150px;
+	background-color: #FFB8D6;
+	padding-bottom: 30px;
+
+}
+
+.header-contact img {
+	
+	height: 175px;
+	width: auto;
+	padding-top: 15px;
+	padding-bottom: 45px;
+
+	
+}
+
+
+
+.home-castle-button p {
+	margin-top: 0px;
+	text-align: center;
+	padding-top: 0px;
+}
+
+*/
+
+
+
+
+
