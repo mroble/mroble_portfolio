@@ -28,18 +28,17 @@ body {
 }
 
 .dropdown img {
-	
 	height: 90px;
 	width: auto;
 	top: 8px;
 	position: top;
-	right: 0px;
 	padding-top: 0px;
 	padding-left: 15px;
 
 
 	
 }
+
 
 .dropdown-content {
     display: none;
@@ -79,6 +78,7 @@ body {
 	height: 100%;
 	background-color: #FFB8D6;
 	padding-bottom: 20px;
+	position: top;
 
 }
 
