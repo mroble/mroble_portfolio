@@ -23,6 +23,9 @@ function submitForm(){
         success : function(text){
             if (text == "success"){
                 formSuccess();
+                } else {
+                formError();
+                submitMSG(false,text);
             }
         }
     });
@@ -39,8 +42,9 @@ function formError(){
 }
 
 function submitMSG(valid, msg){
+          if(valid){
         var msgClasses;
-    if(valid){
+  
         msgClasses = "h3 text-center tada animated text-success";
     } else {
         msgClasses = "h3 text-center text-danger";
