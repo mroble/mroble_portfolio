@@ -71,12 +71,26 @@ body {
 	padding-top: 50px;
 }
 
+.hacker p { 
+	text-align: center;
+	font-size: 20px;
+	font-color: #ffffff;
+	font-weight: bold;
+	background-color: #FFB8D6;
+	}
+
+.hacker img {
+	
+	padding-bottom: 20px; 
+}
 
 
 .header-main p {
 	text-align: center;
 	height: 100%;
 	background-color: #FFB8D6;
+	padding-right: 15px; 
+	padding-left: 15px;
 	padding-bottom: 20px;
 	position: top;
 
@@ -158,6 +172,7 @@ h1 {
 textarea {
 	margin-top: 20px;
 }
+
 
 
 /*.navigation-github img {
