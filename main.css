@@ -200,8 +200,15 @@ textarea {
 .span {
 	text-align: center;
 	font-size: 30px;
+	max-width: 850px;
 }
 
+.print-paragraph {
+	margin-top: 20px;
+	text-align: center;
+	max-width: 900px;
+	margin-left: 150px;
+}
 
 /*.navigation-github img {
 	height: 50px;
